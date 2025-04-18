@@ -72,6 +72,7 @@ bool timepassed(time_t timestamp){
 }
 
 bool filter(task *t, Mode *mode){
+    deprint("test %s\n",mode->mode->c_str());
     if(*mode->mode == "all"){
         return 1;
     }else if(*mode->mode == "name"){
@@ -91,7 +92,8 @@ bool filter(task *t, Mode *mode){
             return 1;
         }
     }else if(*mode->mode == "passed"){
-        if(timepassed(t->get_timestamp()) == *mode->completed){
+        deprint("%d\n",*(mode->completed));
+        if(timepassed(t->get_timestamp()) == *(mode->completed)){
             return 1;
         }
     }else if(*mode->mode == "complete"){
