@@ -100,7 +100,7 @@ ModeType processer::check_valid_mode(string *mode){
             *check = 1;
         }
     }
-    if(*mode=="all"||*mode=="importance") return NONE;
+    if(*mode=="all"||*mode=="importance"||*mode=="passed") return NONE;
     if(*mode=="completed") return COMPLETED;
     if(*mode=="stop") return STOP;
     if(!check) return INVALID;
