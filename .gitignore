@@ -1,2 +1,9 @@
 .vscode
 list.txt
+src/*.o
+src/*.dbg
+main.dbg
+test.dbg
+main
+main.o
+test.o
