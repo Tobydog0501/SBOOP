@@ -17,4 +17,4 @@ class processer{
         ModeType check_valid_mode(string *mode);
 };
 
-#define HELP_MESSAGE "Commands: view, add, edit, delete, save, help, exit\nModes: all, completed, importance, date, category, name, tag\n"
+#define HELP_MESSAGE "Commands: view, add, edit, delete, save, help, exit\nModes: all, completed, importance, passed, category, name, tag\n"
