@@ -128,7 +128,8 @@ void processer::add_subprocess(){
     cout << "Enter time(Format HH:MM, or NONE): " << "\n";
     cin >> *time;
     cout << "Enter description:" << "\n";
-    cin >> *description;
+    cin.ignore();
+    getline(cin,*description);
     // *description;
     cout << "Enter tags(stop to stop):" << "\n";
     string *t = NULL;
