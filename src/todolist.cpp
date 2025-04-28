@@ -111,11 +111,15 @@ void todolist::deleteTask(vector<Mode*> *mode){
                 task *tp = *t;
                 this->tasks->erase(t);
                 delete tp;
+                deprint("DELETED\n");
             }else{
                 t++;
             }
+            deprint("NOUT\n");
         }
+        deprint("OUT\n");
     }
+    deprint("ok\n");
     
 }
 

@@ -6,6 +6,7 @@ Basic_task::Basic_task(string *name, string *category, bool *completed){
     this->completed = new bool(*completed);
 }
 Basic_task::~Basic_task(){
+    deprint("Destructing basic task\n");
     delete this->name;
     delete this->category;
     delete this->completed;
@@ -71,9 +72,6 @@ task::task(string *name, string *category, bool *completed, unsigned int *import
 }
 
 task::~task(){
-    delete this->name;
-    delete this->category;
-    delete this->completed;
     delete this->importance;
     delete this->timestamp;
     delete this->description;
